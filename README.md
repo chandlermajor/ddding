@@ -8,20 +8,21 @@
 *Give Kilo a mouth — it speaks up when you're staring blankly at your screen.*
 
 <!-- badges -->
-<img src="https://img.shields.io/badge/Kilo-插件-6e7681?style=flat-square" alt="Kilo Plugin">
+<img src="https://img.shields.io/badge/Kilo-Plugin-6e7681?style=flat-square" alt="Kilo Plugin">
 <img src="https://img.shields.io/badge/Node-%E2%89%A520-339af0?style=flat-square" alt="Node ≥ 20">
-<img src="https://img.shields.io/badge/npm-0%20dependencies-30d560?style=flat-square" alt="0 npm dependencies">
-<img src="https://img.shields.io/badge/WAV-%E5%AE%9E%E6%97%B6%E5%90%88%E6%88%90-868e95?style=flat-square" alt="Real-time WAV synthesis">
+<img src="https://img.shields.io/badge/Dependencies-0-30d560?style=flat-square" alt="0 dependencies">
+<img src="https://img.shields.io/badge/WAV-Realtime-synthesis-868e95?style=flat-square" alt="Real-time WAV synthesis">
 <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License">
 
 <!-- language switch -->
-<img src="https://img.shields.io/badge/语言-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-lightgrey?style=flat-square" alt="Chinese">
-<a href="#english-version"><img src="https://img.shields.io/badge/Language-English-azure?style=flat-square" alt="English"></a>
+<img src="https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-lightgrey?style=flat-square" alt="简体中文">
+<a href="#english-version"><img src="https://img.shields.io/badge/Language-English-blue?style=flat-square" alt="English"></a>
 
 </div>
 
-> 🌐 **语言切换 / Language**: 您当前阅读的是**简体中文版**。点击下方展开即可在当前页面阅读 **English** 版本；  
-> 也可以打开 [**交互式落地页**](switch.html) 获得完整的中英可切换体验（徽标 · News · 配置表一键切换）。
+> 🌐 **语言切换 / Language**: 您当前阅读的是**简体中文版**。  
+> 👉 **点击下方黄色框** 即可在当前页面阅读 **English** — 无需跳转。  
+> 或者下载 `switch.html` 到本地打开，获得**交互式落地页** 体验（徽标 · News · 配置表一键切换）。
 
 ---
 
@@ -243,10 +244,11 @@ npm test                   # 或: node --test test/
 
 ---
 
-## 📖 English Version
-
+<div align="center" id="english-version">
 <details>
-<summary align="right"><b style="color:#79c0ff; cursor:pointer;">👉 Click to read in English</b></summary>
+<summary style="font-size: 18px; font-weight: bold; color: #79c0ff; cursor: pointer; padding: 14px 32px; background: #21262d; border: 2px solid #30363d; border-radius: 10px; display: inline-block;">
+    🇬🇧 📖 点击展开 → Full English Version
+</summary>
 
 <h2 align="right">Give Kilo a mouth</h2>
 
@@ -321,6 +323,7 @@ npm test   # node --test test/
 Uses a fake emitter — never touches real audio. Covers WAV validity, state-machine transitions, the `session.status` authoritative path (one long task = one fanfare), permission risk-filtering, NaN input guards, and the "only one function export" contract.
 
 </details>
+</div>
 
 ---
 
