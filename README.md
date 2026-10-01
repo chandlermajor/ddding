@@ -237,9 +237,15 @@ npm test                   # 或: node --test test/
 
 ---
 
+## 👤 作者 / Author
+
+**chandlermajor** — <https://github.com/chandlermajor>
+
+---
+
 ## 📜 许可
 
-[MIT](LICENSE) — 由 [Kilo](https://kilo.ai) 社区驱动，为 Kilo 正能量而生。
+[MIT](LICENSE) — Copyright © 2026 chandlermajor。为 Kilo 正能量而生。
 
 ---
 
