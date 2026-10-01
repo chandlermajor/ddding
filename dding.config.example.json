@@ -1,0 +1,66 @@
+{
+  // dding-sound 配置
+  // 位置：~/.config/kilo/dding.json
+  // 改完重启 Kilo（或重载窗口）生效。支持 // 注释和尾逗号。
+
+  "enabled": true,
+
+  // 总音量 0.0 ~ 1.0
+  "volume": 0.55,
+
+  // 需要你决策（question 工具）：三声急促双音，最刺耳
+  "decision": { "enabled": true, "repeats": 3 },
+
+  // 需要授权（permission）：默认关。
+  // 你的 bash 权限是 "*": "ask"，每条命令都会触发一次 permission.asked，
+  // 全开着的话 ls/grep 都响铃，看书时非常吵。
+  "permission": { "enabled": false, "repeats": 2 },
+
+  // 只对高风险操作响：写文件、装包、删东西、git push、curl/wget、sudo…
+  // ls/cat/grep/head 这类只读命令静默跳过。打开 permission 时建议留着。
+  "permissionImportantOnly": true,
+
+  // 任务完成：胜利号角
+  // graceMs 必须够大。实测 Kilo 7.8.1 的 session.status 是一对多的：
+  // 一次长任务里 busy/idle 交替十几次，中间态的 idle 只隔几百毫秒。
+  // 设成 400 就会每个工具调用都响一次。
+  "done": {
+    "enabled": true,
+    "cooldownMs": 20000,
+    "graceMs": 2500
+  },
+
+  // 出错：下行小调
+  "error": { "enabled": true, "cooldownMs": 20000 },
+
+  // 开始干活：默认关，需要就打开
+  "start": { "enabled": false },
+
+  // 插件启动时先响一下自检（确认播放器可用，不受 start.enabled 影响）
+  "startupChime": true,
+
+  // 看门狗：兜底。7.8.1 的权威信号是 session.status({type:"busy"|"idle"})，
+  // 一旦某个会话给过 session.status，看门狗就不再插手。
+  // 只在某个会话始终不发 session.status 时才按「安静够久」判定完成。
+  "watchdog": { "enabled": true, "tickMs": 1000, "quietMs": 2500 },
+
+  // 只对本项目目录的会话发声；false = 全部会话都响
+  "currentProjectOnly": true,
+
+  // 只为主会话发声，屏蔽子代理 / Agent Manager 会话
+  "mainSessionsOnly": true,
+
+  // "auto" 会依次探测 pw-play / paplay / ffplay / aplay / play
+  "player": "auto",
+
+  // 调试日志写 ~/.config/kilo/dding.log
+  "debug": false,
+
+  // 语音朗读（需要系统装 espeak-ng：sudo apt install espeak-ng）
+  "tts": {
+    "enabled": false,
+    "command": "espeak-ng",
+    "voice": "cmn",
+    "maxChars": 120
+  }
+}
