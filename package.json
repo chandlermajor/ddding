@@ -1,7 +1,7 @@
 {
   "name": "dding-sound",
   "version": "1.0.0",
-  "description": "给 Kilo 装上耳朵：需要你决策时响一声，任务完成时吹号角",
+  "description": "给 Kilo 一张嘴：需要你决策时响一声，任务完成时吹号角",
   "icon": "dding-icon.png",
   "type": "module",
   "private": true,
@@ -14,8 +14,9 @@
     "install-plugin": "node scripts/install.mjs",
     "link-plugin": "node scripts/install.mjs --link",
     "uninstall-plugin": "node scripts/install.mjs --uninstall",
-    "preview": "node scripts/preview.mjs"
+    "preview": "node scripts/preview.mjs",
+    "build": "node scripts/build.mjs"
   },
   "keywords": ["kilocode", "kilo", "plugin", "audio", "notification", "vscode", "vscodium"],
-  "files": ["dding-sound.js", "scripts/", "test/", "dding.config.example.json", "dding-icon.png", "dding-icon-256.png"]
+  "files": ["dding-sound.js", "scripts/", "dding.config.example.json", "dding-icon.png", "dding-icon-256.png"]
 }
