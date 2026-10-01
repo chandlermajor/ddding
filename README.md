@@ -21,8 +21,7 @@
 </div>
 
 > 🌐 **语言切换 / Language**: 您当前阅读的是**简体中文版**。  
-> 👉 **[点击此处直接跳转至 English 版](#english-version)** — 无需滚动。  
-> 或者下载 `switch.html` 到本地打开，获得**交互式落地页** 体验（徽标 · News · 配置表一键切换）。
+> 👉 **[点击此处直接跳转至 English 版](#english-version)** — 无需滚动。
 
 ---
 
@@ -328,8 +327,6 @@ Uses a fake emitter — never touches real audio. Covers WAV validity, state-mac
 ---
 
 <div align="center">
-
-<a href="switch.html"><strong>🌐 打开交互式落地页 / Open Interactive Landing Page</strong></a>
 
 <img src="https://img.shields.io/badge/powered%20by-Kilo-6e7681?style=flat-square" alt="Powered by Kilo">
 
