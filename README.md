@@ -1,12 +1,30 @@
 # dding-sound
 
-<img src="dding-icon-256.png" width="96" alt="dding">
+<div align="center">
 
-给 Kilo 一张嘴：你盯着屏幕发呆时，它出声喊你。
+<img src="dding-icon-256.png" width="100" alt="dding">
 
-> 🌐 语言切换：本项目README支持中英文，请点击仓库上方的
-> [**English**](switch.html) 查看英文版（或查看独立版本
-> [中文](docs/README.md) / [English](docs/README.en.md)）。
+**给 Kilo 一张嘴：你盯着屏幕发呆时，它出声喊你。**
+
+[**🌐 中英可切换落地页**](switch.html) ·
+[**📦 安装**](#安装) ·
+[**⚙️ 配置**](#配置)
+
+---
+
+</div>
+
+<!--
+================================================================================
+  上面的中文卡片是 README 首页。
+  想要「一键切换 English / 中文」的完整落地页（含徽章、News、配置表）：
+  → 打开 switch.html ：https://github.com/<your-repo>/blob/main/switch.html
+  → 或本地：xdg-open switch.html
+================================================================================
+-->
+
+> 🌐 **Language / 语言切换**：点击 [**English →**](switch.html) 查看完整中英可切换落地页
+> （徽章 · News · 配置表一键切换），或直接阅读下方 Markdown 中文版。
 
 ---
 
